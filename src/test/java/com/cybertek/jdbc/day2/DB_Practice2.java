@@ -1,4 +1,5 @@
 package com.cybertek.jdbc.day2;
+import com.cybertek.jdbc.utility.DB_Utility;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,14 +23,12 @@ public class DB_Practice2 {
         System.out.println(DB_Utility.getColumnDataAtRow(3, 2));
         System.out.println(DB_Utility.getColumnDataAtRow(3, "REGION_NAME"));
 
-        DB_Utility.runQuery("SELECT * FROM EMPLOYEES") ;
-        System.out.println(DB_Utility.getRowDataAsList(4) );
+        DB_Utility.runQuery("SELECT * FROM EMPLOYEES");
+        System.out.println(DB_Utility.getRowDataAsList(4));
 
-        System.out.println( DB_Utility.getColumnDataAsList(2) );
-        System.out.println( DB_Utility.getColumnDataAsList("FIRST_NAME") );
-
+        System.out.println(DB_Utility.getColumnDataAsList(2));
+        System.out.println(DB_Utility.getColumnDataAsList("FIRST_NAME"));
 
 
     }
-
 }
